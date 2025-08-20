@@ -1,0 +1,14 @@
+In day2 i learned about multi containers, volume mappinf for a empty directory, and what a empty dire means
+
+1. volume will be defined
+   volumes:
+   - name: sharedir
+     emptyDir: {}
+
+2. volume mapping
+   volumeMounts:
+   - name: shareddir
+     mountPath: /data
+
+3. initContainers in sepc level not contianers sub ok?
+
