@@ -1,0 +1,17 @@
+So i learned deployments
+List of things i corected
+Theory
+1. no need of a pod name only label is enough when we are creating a deployment
+2. selector is what makes deploymnet know which pods it should manage so selctor label and template label (pod label) are important
+3. Services will use same label to connetc to pods 
+Syntax
+1. apiVersion: apps/v1
+2. ports:
+   - containerPort: 80
+3. selector:
+     matchLabels: 
+       app: kk
+
+   template:
+     metadata:
+       app: kk
