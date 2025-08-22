@@ -1,0 +1,19 @@
+I learned about service and created them ClusterIp and NodePort
+
+Theory
+1. Every node will share smae virtual env, Creted by CNI So pods will share same kind of subnets and soo everything is accessable 
+
+2. As we know loadbalancer is a abstraction of nodeports, But loadbalcner will not be having nay idea that node have specific port or not so   flow will be like  loadbalancer --> NodePort --> KubeProxy --> Pod
+
+3. CNI is very important need to learn about it more
+
+Syntax
+
+1. Not clusterIp it is ClusterIp,NodePort
+2. spec:
+     type:
+     selector:
+     ports:
+     - port:
+       targetPort:
+       nodePort:

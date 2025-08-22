@@ -1,7 +1,7 @@
 This teached me basic pod writing
 I got confused at how to initilize ports and command i found out that we need to do in 
 ports:
-  containerPort:80
+- containerPort:80
 
 and for commands
 
